@@ -1111,8 +1111,14 @@ body{
   height: 100%;
 }
 
+.enter-visible{
+  display: block;
+}
+
 .entrance{
+  display: block;
   position: relative;
+  z-index: 10;
   width: 960px;
   margin: 20px auto;
   padding: 0 100px;
@@ -1120,6 +1126,13 @@ body{
   padding-bottom: 85px;
   background-color: #ffffff;
   box-shadow: 0 0 30px black;
+}
+
+.exit{
+  position: absolute;
+  top: -1px;
+  right: -2px;
+
 }
 
 .exit::after{
