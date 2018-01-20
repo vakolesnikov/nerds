@@ -631,7 +631,7 @@ body{
   text-align: center;
   line-height: 55px;
   font-weight: 700;
-  padding-top: 64px;
+  padding-top: 78px;
   padding-bottom: 108px;
 }
 
@@ -989,14 +989,14 @@ body{
 .features-checkbox{
   position: relative;
   height: 23px;
-  padding-left: 35px;
+  padding-left: 36px;
   margin-bottom: 17px;
 }
 
 .features-checkbox::after{
   position: absolute;
   top: 0;
-  left: 0;
+  left: 2px;
   content: "";
   display: block;
   width: 35px;
@@ -1111,6 +1111,16 @@ body{
 
 
 /*=========ENTER CSS==========*/
+@keyframes enter_animation {
+
+  100%{
+    transform: scale(1);
+  }
+
+
+
+}
+
 .enter{
   display: none;
   position: fixed;
@@ -1136,6 +1146,10 @@ body{
   padding-bottom: 85px;
   background-color: #ffffff;
   box-shadow: 0 0 30px black;
+  transform: scale(0.01);
+  animation-name: enter_animation;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
 }
 
 .exit{
